@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply font-sans bg-slate-100 text-slate-900;
+}
+
+.ag-theme-alpine {
+  --ag-font-family: 'Segoe UI', sans-serif;
+  --ag-foreground-color: #1f2937;
+  --ag-border-color: #cbd5f5;
+  --ag-header-foreground-color: #1e293b;
+  --ag-header-background-color: #e2f1eb;
+  --ag-row-hover-color: rgba(33, 115, 70, 0.08);
+}
+
+.excel-header-cell {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.excel-cell:focus-within {
+  outline: 2px solid #217346;
+  outline-offset: -2px;
+}
